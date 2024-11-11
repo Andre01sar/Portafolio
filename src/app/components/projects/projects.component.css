@@ -1,0 +1,32 @@
+.project{
+    list-style: none;
+    display: grid;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.project .image{
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+}
+
+.project img{
+    width: 80%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+}

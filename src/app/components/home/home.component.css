@@ -1,0 +1,188 @@
+.about{
+    padding: 15px;
+    text-align: center;
+}
+
+h3{
+    font-size: 2vw;
+}
+
+
+.hometitle{
+    font-size: 2vw;
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #3b2a60;
+
+}
+
+
+.name{
+    font-size: 4vw;
+    color:transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #3b2a60;
+}
+
+
+.name_sombra{
+    position: relative;
+    text-shadow: 5px 2px 0 rgba(183, 116, 247, 0.88);
+    
+}
+
+
+.name_sombra:hover{
+    transform: scale(1.50,1.50);
+    transition: all 0.5s ease;
+}
+
+
+
+button{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 10%;
+}
+
+.curriculum, .contact{
+    font-family: "Edu";
+    font-size: 1vw;
+    padding: 1vw;
+    margin-top: 15px;
+    color: white;
+    background: rgba(183, 116, 247, 0.88);
+    border: 1px solid rgba(102, 34, 165, 0.88);
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+
+/* Iconos flotantes git, email y linkedin*/
+.floating-icons {
+    position: fixed;
+    top: 50%; /* Posiciona en el centro verticalmente */
+    transform: translateY(-50%); /* Centra verticalmente */
+    display: flex;
+    flex-direction: column; /* Alinea los íconos en columna */
+    gap: 15px; 
+}
+
+.floating-icons i {
+    font-size: 3vw; 
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+.floating-icons i:hover {
+    color: rgba(183, 116, 247, 0.88); 
+    cursor: pointer; 
+}
+
+
+
+/* Seccion de descripcion basica*/
+
+.soy{
+    display: flex; 
+    align-items: stretch; 
+    gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    flex-direction: column;
+}
+
+img {
+    max-width: 25vw;
+    height: auto;
+    margin-left: 5rem;
+    border-radius: 15rem;
+}
+
+.content {
+    display: flex;
+    align-items: center; 
+    gap: 2rem; 
+    flex-wrap: wrap;
+}
+
+.mi-foto{
+    max-width: 20rem; 
+    height: auto;
+    border-radius: 10rem;
+}
+
+.foto{
+    display: grid;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.description{
+    flex: 1;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+.description p{
+    display: grid;
+    margin: 5vw;
+}
+
+/*Herramientas */
+
+.tecnologias{
+    padding: 2rem;
+}
+
+.tecno_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw 1vw;
+    justify-content: center;
+}
+
+@media (max-width: 768px) { 
+    .tecno_container {
+        grid-template-columns: 1fr; /* Una sola columna, las divisiones se alinean hacia abajo */
+    }
+}
+
+.imgF,
+.imgB,
+.imgH{
+    margin-right: 4rem;
+    max-width: 10vw;
+    height: auto;
+}
+
+.front,
+.back,
+.tools{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.front_description,
+.back_description,
+.tools_description {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(6vw, 1fr));
+    justify-items: center;
+    padding: 1vw;
+
+}
+
+span{
+    margin-top: 15px;
+    color: white;
+    background: rgba(183, 116, 247, 0.88);
+    border: 1px solid rgba(163, 163, 163, 0.88);
+    border-radius: 1vw;
+}
+
+

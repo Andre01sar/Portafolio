@@ -1,0 +1,180 @@
+
+
+@font-face{
+    font-family: "Edu";
+    src: url("fonts/Edu.ttf");
+}
+
+@font-face{
+    font-family: "PlaywriteAR";
+    src: url("fonts/PlaywriteAR.ttf");
+}
+
+/* Generales*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Edu", Arial, Helvetica ;
+    font-size: 20px;
+    background: url("./../img/pattern2.png");
+    background-attachment: fixed;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.grid {
+  display: grid;
+}
+
+img {
+    height: auto;
+}
+
+/* Barra de navegacion, cabecera o header*/
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1vw;
+    transition: all 300ms;
+}
+
+nav a:hover, .actived{
+    background: rgba(102, 34, 165, 0.88);
+    background: transparent;
+    color: black;
+    transform: scale(1.50,1.50);
+}
+
+.nav {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_container{
+    height: 3rem;
+    display: flex;
+    background:  rgba(183, 116, 247, 0.88);
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navL {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-weight: 500;
+}
+
+  
+.navL-img {
+    width: 2rem;
+    border-radius: 10rem;
+    transition: color 500ms, transform 500ms
+}
+
+
+.navLink,
+.navL,
+.navclose,
+.navToggle{
+  color: #fff;
+}
+
+.navToggle {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .navM {
+      position: fixed;
+      width: 100%;
+      top: -150%;
+      left: 0;
+      padding: 3.5rem 0;
+      z-index: 100;
+      border-radius: 0 0 1.5rem 1.5rem;
+    }
+}
+
+.navclose {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.7rem;
+    cursor: pointer;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    column-gap: 3vw;
+}
+
+
+
+/*Contenedor principal*/
+#content{
+    min-height: 500px;
+    height: auto;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 1.5rem;
+    overflow: hidden;
+}
+
+/*Footer o pie de pagina*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(180deg, gray, transparent);
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(0,0,0, 0.5);
+    font-size: 2vw;
+}
+
+footer span{
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.icons{
+    font-size: 2vw;
+    text-align: right;
+    margin-right: 2vw;
+}
+
+.icons :hover{
+    color: rgba(7, 7, 7, 0.88); 
+    cursor: pointer;
+
+}

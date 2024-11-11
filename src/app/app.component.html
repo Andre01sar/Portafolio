@@ -1,0 +1,43 @@
+
+<link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+<header>
+  <nav class="nav_container">
+    <a href="" class="navL">
+      <img src="../assets/img/yoo.jpg" alt="#" class="navL-img" />
+      Inicio
+    </a>
+    <div class="navM">
+      <ul class="navList">
+        <li class="navLink"><a [routerLink]="['/sobre-mi']"[routerLinkActive]="['actived']">Sobre mi </a></li>
+        <li class="navLink"><a [routerLink]="['/proyectos']"[routerLinkActive]="['actived']">Proyectos </a></li>
+        <li class="navLink"><a [routerLink]="['/contacto']"[routerLinkActive]="['actived']">Contacto</a></li>
+      </ul>
+      <div class="navclose" id="nav-close">
+        <i class="bx bx-x"></i>
+      </div>
+    </div>
+
+    <div class="navToggle" id="nav-toggle">
+      <i class="bx bx-grid-alt"></i>
+    </div>
+  </nav>
+</header>
+
+<div class="clearfix"></div>
+
+<section id="content">
+
+  <router-outlet />
+
+</section>
+
+<div class="clearfix"></div>
+
+<footer>
+  Andrea L. Mendizabal &copy;
+  <div class="icons">
+    <span>   <i class="bi bi-github"></i></span>
+    <span>  <i class="bi bi-linkedin"></i></span>
+    <span>  <i class="bi bi-envelope"></i></span>
+  </div>
+</footer>

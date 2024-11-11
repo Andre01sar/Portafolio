@@ -1,0 +1,104 @@
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.form{
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+form{
+    background-color:  rgb(154 110 197 / 37%);
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5vw 1vw;
+    border-radius: 1%;
+    box-shadow: 0 8px 18px rgba(194, 153, 231, 0.88);
+    text-align: center;
+}
+
+.form_container{
+    margin-top: 2vw;
+    display: grid;
+    gap: 1vw;
+}
+
+.form_group{
+    position: relative;
+    color:rgb(111, 2, 145);
+
+}
+
+
+.input{
+    width: 100%;
+    background: none;
+    font-family: "Edu", Arial, Helvetica ;
+    color: #1d1d1d;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid rgb(111, 2, 145);
+    font-size: 20px;
+}
+
+
+.lsombra{
+    position: relative;
+    text-shadow: 1px 0 rgb(195 133 255);
+    
+}
+
+
+.label{
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.dbutton{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 10%;
+}
+
+.button{
+    font-family: "Edu";
+    font-size: 20px;
+    padding: 1vw;
+    margin-top: 15px;
+    color: white;
+    background: rgba(183, 116, 247, 0.88);
+    border: 1px solid rgba(102, 34, 165, 0.88);
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.alert{
+    margin-left: 150px;
+    margin-top: -50px;
+    position: absolute;
+    background-color: #ffa9a9;
+    border-radius: 1vw;
+}
+
+span{
+    color: red;
+    font-size: 15px;
+    word-spacing: 1px;
+    text-align: right;
+}
+
+
+
+
+

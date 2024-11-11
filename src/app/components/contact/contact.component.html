@@ -1,0 +1,59 @@
+<div class="container" >
+  <h1>Contáctame</h1>
+  <div class="form">
+
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+      <div class="form_container">
+        
+        <div class="form_group">
+
+          <label class="label lsombra" for="name">Nombre:</label><br>
+          <input class="input" type="text" id="name" name="name" [(ngModel)]="contact.name" required appNoNumbers #nameInput="ngModel">
+          
+          <div class="alert" *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched) ">
+            <span *ngIf="nameInput.errors?.['required']" ><i class="bi bi-exclamation-triangle">   </i></span>
+            <span *ngIf="nameInput.errors?.['noNumbers']">Nombre inválido.</span>
+          </div>
+
+        </div>
+
+        <div class="form_group">
+
+          <label class="label lsombra" for="email">Correo:</label><br>
+          <input class="input" type="email" id="email" name="email" [(ngModel)]="contact.email" required appEmailValidation #emailInput="ngModel" >
+
+          <div class="alert" *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)">
+            <span *ngIf="emailInput.errors?.['required']" ><i class="bi bi-exclamation-triangle">   </i></span>
+            <span *ngIf="emailInput.errors?.['invalidEmail']">Correo inválido.</span>
+          </div>
+
+        </div>
+
+        <div class="form_group">
+
+          <label class="label lsombra" for="subject">Asunto:</label><br>
+          <input class="input" type="text" id="subject" name="subject" required >
+
+        </div>
+
+        <div class="form_group">
+
+        <label class="label lsombra" for="message">Mensaje:</label><br>
+        <textarea class="input" id="message" name="message" [(ngModel)]="contact.message" required></textarea>
+        
+        </div>
+        
+        <div class="dbutton">
+        <button type="submit" [disabled]="contactForm.invalid" class="button" >Enviar</button>
+        </div>
+
+
+      </div>
+
+    </form>
+
+  </div>
+  
+
+</div>
